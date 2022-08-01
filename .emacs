@@ -26,12 +26,10 @@
 (setq company-minimum-prefix-length 1)
 (setq company-selection-wrap-around t)
 
-;; Setup lsp
-(require 'lsp-mode)
-(add-hook 'prog-mode-hook #'lsp)
-
-;; Hook go with lsp
+;; Setup lsp hooks
+(add-hook 'c-mode-common-hook 'lsp-deferred)
 (add-hook 'go-mode-hook 'lsp-deferred)
+(add-hook 'js-mode-hook 'lsp-deferred)
 
 ;; Disable menu and toolbar
 (menu-bar-mode 0)
@@ -39,6 +37,9 @@
 
 ;; Adjust font
 (set-face-attribute 'default nil :family "JetBrains Mono" :height 110)
+
+;; Set c mode style
+(setq c-default-style "java")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
