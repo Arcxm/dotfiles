@@ -28,7 +28,9 @@
 
 ;; Setup lsp hooks
 (add-hook 'c-mode-common-hook 'lsp-deferred)
+(add-hook 'rust-mode-hook 'lsp-deferred)
 (add-hook 'go-mode-hook 'lsp-deferred)
+(add-hook 'zig-mode-hook 'lsp-deferred)
 (add-hook 'js-mode-hook 'lsp-deferred)
 
 ;; Disable menu and toolbar
