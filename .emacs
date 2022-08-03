@@ -43,6 +43,15 @@
 ;; Set c mode style
 (setq c-default-style "java")
 
+;; Setup go
+(defun my-go-mode-hook ()
+  ;; Use goimports instead of go-fmt
+  (setq gofmt-command "goimports")
+  ;; Call gofmt before saving
+  (add-hook 'before-save-hook 'gofmt-before-save)
+)
+(add-hook 'go-mode-hook 'my-go-mode-hook)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
