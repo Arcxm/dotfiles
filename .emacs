@@ -37,8 +37,9 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 
-;; Adjust font
+;; Font selection
 (set-face-attribute 'default nil :family "JetBrains Mono" :height 110)
+;; (set-face-attribute 'default nil :family "Iosevka" :height 130)
 
 ;; Set c mode style
 (setq c-default-style "java")
