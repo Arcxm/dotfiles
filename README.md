@@ -6,3 +6,4 @@ A collection of my dotfiles.
 
 - GNU Emacs (Fonts: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) and [Iosevka](https://github.com/be5invis/Iosevka))
 - Git Aliases
+- GDBinit
