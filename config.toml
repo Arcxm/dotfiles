@@ -1,0 +1,10 @@
+theme = "dark_plus"
+
+[editor]
+auto-format = false
+
+[editor.file-picker]
+hidden = true
+
+[editor.lsp]
+display-inlay-hints = true
